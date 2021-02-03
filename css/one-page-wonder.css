@@ -14,8 +14,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran';
-  font-weight: 800 !important;
+  font-family: 'Futura';
+  font-weight: 800;
 }
 
 .btn-xl {
@@ -32,6 +32,10 @@ h6 {
 
 .bg-gray {
   background-color: #212529 !important;
+}
+
+.bg-darkgray {
+  background-color: #171717 !important;
 }
 
 .rounded-pill {
@@ -69,6 +73,10 @@ h6 {
   padding-top: 50px;
 }
 
+body {
+  background-color: #000;
+}
+
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -99,19 +107,23 @@ header.masthead {
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 100vh;
 }
 
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
+  top: 40vh;
 }
 
 header.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
+  color: #fc4c4e;
 }
 
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 header.masthead .bg-circle {
@@ -156,10 +168,162 @@ header.masthead .bg-circle-4 {
   }
   header.masthead .masthead-content .masthead-heading {
     font-size: 6rem;
+    color: #fc4c4e;
   }
   header.masthead .masthead-content .masthead-subheading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
+}
+
+section.detail, .artist {
+  font-weight: 400;
+}
+
+section.detail .desc-center, section.detail .desc-left, section.detail .desc-right, .artist .desc-center, .artist .desc-left, .artist .desc-right {
+  margin: 50px;
+  font-size: 20px;
+}
+
+section.detail .desc-center.top-100, section.detail .desc-left.top-100, section.detail .desc-right.top-100, .artist .desc-center.top-100, .artist .desc-left.top-100, .artist .desc-right.top-100 {
+  margin-top: 100px;
+}
+
+section.detail .desc-center.top-150, section.detail .desc-left.top-150, section.detail .desc-right.top-150, .artist .desc-center.top-150, .artist .desc-left.top-150, .artist .desc-right.top-150 {
+  margin-top: 150px;
+}
+
+section.detail .desc-center.bottom-100, section.detail .desc-left.bottom-100, section.detail .desc-right.bottom-100, .artist .desc-center.bottom-100, .artist .desc-left.bottom-100, .artist .desc-right.bottom-100 {
+  margin-bottom: 100px;
+}
+
+section.detail .desc-center.bottom-150, section.detail .desc-left.bottom-150, section.detail .desc-right.bottom-150, .artist .desc-center.bottom-150, .artist .desc-left.bottom-150, .artist .desc-right.bottom-150 {
+  margin-bottom: 150px;
+}
+
+section.detail .desc-left, section.detail .desc-right, .artist .desc-left, .artist .desc-right {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+section.detail .image-center, section.detail .image-left, section.detail .image-right, section.detail .image-triple, .artist .image-center, .artist .image-left, .artist .image-right, .artist .image-triple {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (min-width: 720px) {
+  section.detail .desc-center, section.detail .desc-left, section.detail .desc-right, .artist .desc-center, .artist .desc-left, .artist .desc-right {
+    margin: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-size: 20px;
+  }
+  section.detail .desc-center.top-100, section.detail .desc-left.top-100, section.detail .desc-right.top-100, .artist .desc-center.top-100, .artist .desc-left.top-100, .artist .desc-right.top-100 {
+    margin-top: 100px;
+  }
+  section.detail .desc-center.top-150, section.detail .desc-left.top-150, section.detail .desc-right.top-150, .artist .desc-center.top-150, .artist .desc-left.top-150, .artist .desc-right.top-150 {
+    margin-top: 150px;
+  }
+  section.detail .desc-center.bottom-100, section.detail .desc-left.bottom-100, section.detail .desc-right.bottom-100, .artist .desc-center.bottom-100, .artist .desc-left.bottom-100, .artist .desc-right.bottom-100 {
+    margin-bottom: 100px;
+  }
+  section.detail .desc-center.bottom-150, section.detail .desc-left.bottom-150, section.detail .desc-right.bottom-150, .artist .desc-center.bottom-150, .artist .desc-left.bottom-150, .artist .desc-right.bottom-150 {
+    margin-bottom: 150px;
+  }
+  section.detail .desc-left, section.detail .desc-right, .artist .desc-left, .artist .desc-right {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  section.detail .image-center, section.detail .image-left, section.detail .image-right, section.detail .image-triple, .artist .image-center, .artist .image-left, .artist .image-right, .artist .image-triple {
+    margin: 50px;
+    min-height: 467px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  section.detail .image-left, section.detail .image-right, .artist .image-left, .artist .image-right {
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 0px;
+  }
+  section.detail .image-triple, .artist .image-triple {
+    min-height: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.artist .desc-center {
+  font-weight: 300;
+  margin: 50px;
+  margin-left: 0px;
+  font-size: 18px;
+}
+
+.artist .creators {
+  margin-left: 50px;
+  margin-top: -32px;
+  margin-bottom: auto;
+}
+
+.artist .creators .creator_button {
+  width: 150px;
+  height: 59px;
+  margin: 32px 0 24px 0px;
+  padding: 16px 8px 16px 24px;
+  border-radius: 27px;
+  background-color: #444444;
+}
+
+.artist .creators .creator_button span {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.artist .creator-image {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: auto;
+  position: relative;
+}
+
+.artist .creator-image .image-left {
+  margin-top: 0px;
+}
+
+.top-100 {
+  margin-top: 100px;
+}
+
+.top-150 {
+  margin-top: 150px;
+}
+
+.bottom-100 {
+  margin-bottom: 100px;
+}
+
+.bottom-150 {
+  margin-bottom: 150px;
+}
+
+.col-top {
+  top: 0%;
+}
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.triple-width {
+  width: 33%;
+}
+
+.half-width {
+  width: 50%;
 }
 
 .bg-primary {
