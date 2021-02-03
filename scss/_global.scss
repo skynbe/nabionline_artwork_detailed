@@ -48,16 +48,60 @@ h6 {
   color: rgba(0, 0, 0, 0);
 }
 
-.creator_button {
-  width: 203px;
-  height: 59px;
-  margin: 32px 0 24px 32px;
-  padding: 16px 8px 16px 24px;
-  border-radius: 27px;
-  background-color: #444444;
+// .creator_button {
+//   width: 203px;
+//   height: 59px;
+//   margin: 32px 0 24px 32px;
+//   padding: 16px 8px 16px 24px;
+//   border-radius: 27px;
+//   background-color: #444444;
+//
+//   span {
+//     font-size: 18px;
+//     color: #fff;
+//   }
+// }
 
-  span {
-    font-size: 18px;
-    color: #fff;
-  }
+
+.top-100 {
+  margin-top: 100px;
+}
+
+.top-150 {
+  margin-top: 150px;
+}
+
+.bottom-100 {
+  margin-bottom: 100px;
+}
+
+.bottom-150 {
+  margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+.col-top {
+  top: 0%;
+}
+
+
+.full-width {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.triple-width {
+  width: 33%;
+}
+
+.half-width {
+  width: 50%;
 }

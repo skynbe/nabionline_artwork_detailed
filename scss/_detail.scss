@@ -4,7 +4,12 @@ section.detail, .artist {
   font-weight: 400;
 
   .desc-center, .desc-left, .desc-right {
+    max-width: 700px;
+
     margin: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
     font-size: 20px;
     &.top-100 {
       margin-top: 100px;
@@ -26,16 +31,41 @@ section.detail, .artist {
   .desc-left, .desc-right {
     margin-left: 50px;
     margin-right: 50px;
-    // width: 105%;
   }
 
   .desc-left {
-    // margin-left: -80px;
   }
 
   .image-center, .image-left, .image-right, .image-triple {
       margin-left: 0px;
       margin-right: 0px;
+      // width: 100%;
+      height: 467px;
+      // width: 100vw;
+      // width: 100px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: scroll;
+      background-size: cover;
+  }
+
+  .image-left, .image-right {
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 0px;
+    // width: 130%;
+  }
+
+  .image-left {
+    // margin-left: -20vh;
+  }
+
+  .image-triple {
+    min-height: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 }
@@ -44,10 +74,13 @@ section.detail, .artist {
 @media (min-width: 720px) {
   section.detail, .artist {
     .desc-center, .desc-left, .desc-right {
-      margin: 50px;
-      margin-right: 200px;
-      margin-left: 200px;
       font-size: 20px;
+      max-width: 700px;
+
+      margin: 50px;
+      margin-right: auto;
+      margin-left: auto;
+
       &.top-100 {
         margin-top: 100px;
       }
@@ -78,7 +111,7 @@ section.detail, .artist {
 
     .image-center, .image-left, .image-right, .image-triple {
       margin: 50px;
-      min-height: 467px;
+      height: 467px;
       // width: 907px;
       background-size: cover;
       background-repeat: no-repeat;
@@ -110,15 +143,20 @@ section.detail, .artist {
 .artist {
   .desc-center {
     font-weight: 300;
-    margin: 50px;
-    margin-left: 0px;
+    // margin: 50px;
+    // margin-left: 0px;
     font-size: 18px;
+    max-width: 90vw;
+
+    margin: 50px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .creators {
     margin-left: 50px;
     // margin-right: 0px;
-    margin-top: -32px;
+    margin-top: 18px;
     margin-bottom: auto;
 
     .creator_button {
@@ -140,7 +178,7 @@ section.detail, .artist {
   .creator-image {
     margin-right: 0px;
     margin-left: 0px;
-    width: auto;
+    // width: auto;
     // height: 467px;
     position: relative;
 
@@ -151,54 +189,28 @@ section.detail, .artist {
 }
 
 
+@media (min-width: 720px) {
+  .artist {
+    .desc-center {
+      font-weight: 300;
+      margin: 50px;
+      margin-top: 0px;
+      margin-left: 0px;
+      font-size: 18px;
+      // max-width: 1000px;
+    }
+
+    .creators {
+      margin-top: -32px;
+    }
+  }
+
+
+}
+
 
 
 // .creator_button span {
 //   font-size: 18px;
 //   color: #fff;
 // }
-
-
-
-.top-100 {
-  margin-top: 100px;
-}
-
-.top-150 {
-  margin-top: 150px;
-}
-
-.bottom-100 {
-  margin-bottom: 100px;
-}
-
-.bottom-150 {
-  margin-bottom: 150px;
-}
-
-
-
-
-
-
-
-
-
-
-.col-top {
-  top: 0%;
-}
-
-
-.full-width {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-}
-
-.triple-width {
-  width: 33%;
-}
-
-.half-width {
-  width: 50%;
-}
