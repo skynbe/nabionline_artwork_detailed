@@ -36,7 +36,7 @@ section.detail, .artist {
   .desc-left {
   }
 
-  .image-center, .image-left, .image-right, .image-triple {
+  .image-center, .image-left, .image-right, .image-triple, .image-half {
       margin-left: 0px;
       margin-right: 0px;
       // width: 100%;
@@ -62,7 +62,7 @@ section.detail, .artist {
     // margin-left: -20vh;
   }
 
-  .image-triple {
+  .image-triple, .image-half {
     min-height: 300px;
     margin-left: 0px;
     margin-right: 0px;

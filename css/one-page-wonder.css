@@ -227,7 +227,7 @@ section.detail .desc-left, section.detail .desc-right, .artist .desc-left, .arti
   margin-right: 50px;
 }
 
-section.detail .image-center, section.detail .image-left, section.detail .image-right, section.detail .image-triple, .artist .image-center, .artist .image-left, .artist .image-right, .artist .image-triple {
+section.detail .image-center, section.detail .image-left, section.detail .image-right, section.detail .image-triple, section.detail .image-half, .artist .image-center, .artist .image-left, .artist .image-right, .artist .image-triple, .artist .image-half {
   margin-left: 0px;
   margin-right: 0px;
   height: 467px;
@@ -244,7 +244,7 @@ section.detail .image-left, section.detail .image-right, .artist .image-left, .a
   min-width: 0px;
 }
 
-section.detail .image-triple, .artist .image-triple {
+section.detail .image-triple, section.detail .image-half, .artist .image-triple, .artist .image-half {
   min-height: 300px;
   margin-left: 0px;
   margin-right: 0px;
