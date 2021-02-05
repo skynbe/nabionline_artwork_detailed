@@ -310,6 +310,10 @@ section.detail .image-triple, section.detail .image-half, .artist .image-triple,
   margin-bottom: auto;
 }
 
+.artist .creators :hover {
+  cursor: pointer;
+}
+
 .artist .creators .creator_button {
   width: 150px;
   height: 59px;

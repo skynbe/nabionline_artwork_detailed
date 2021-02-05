@@ -159,6 +159,10 @@ section.detail, .artist {
     margin-top: 18px;
     margin-bottom: auto;
 
+    :hover {
+      cursor: pointer;
+    }
+
     .creator_button {
       width: 150px;
       height: 59px;
@@ -172,6 +176,8 @@ section.detail, .artist {
         font-size: 18px;
         color: #fff;
       }
+
+
     }
   }
 
